@@ -1,5 +1,6 @@
 {
   "name": "小兔鲜儿",
+  // DC特有，云打包（IOS、安卓）
   "appid": "",
   "description": "",
   "versionName": "1.0.0",
