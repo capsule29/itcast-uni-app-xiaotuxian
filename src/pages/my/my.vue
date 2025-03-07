@@ -2,6 +2,13 @@
 import { useMemberStore } from '@/stores'
 
 const memberStore = useMemberStore()
+
+const getData = function () {
+  uni.request({
+    method: 'GET',
+    url: '/home/banner',
+  })
+}
 </script>
 
 <template>
@@ -11,6 +18,7 @@ const memberStore = useMemberStore()
       @tap="
         memberStore.setProfile({
           nickname: '黑马先锋',
+          token: '123456',
         })
       "
       size="mini"
@@ -20,6 +28,7 @@ const memberStore = useMemberStore()
       保存用户信息
     </button>
     <button @tap="memberStore.clearProfile()" size="mini" plain type="warn">清理用户信息</button>
+    <button @tap="getData"></button>
   </view>
 </template>
 
