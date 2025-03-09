@@ -7,7 +7,6 @@ import { ref } from 'vue'
 const bannerList = ref([])
 const getHomeBannerData = async () => {
   const res = await getHomeBannerAPI()
-  console.log(res)
   bannerList.value = res.result
 }
 onLoad(() => {
