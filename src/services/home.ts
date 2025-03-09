@@ -1,0 +1,22 @@
+import { http } from '@/utils/http'
+
+interface getHomeBannerAPIReturnType {
+  id: string
+  imgUrl: string
+  hrefUrl: string
+  type: number
+}
+/**
+ * 首页-广告区域-小程序
+ * @param distributionSite 广告区域展示位置：1 为首页（默认值），2 为商品分类页
+ * @returns
+ */
+export const getHomeBannerAPI = (distributionSite = 1) => {
+  return http<getHomeBannerAPIReturnType>({
+    method: 'GET',
+    url: '/home/banner',
+    data: {
+      distributionSite,
+    },
+  })
+}
