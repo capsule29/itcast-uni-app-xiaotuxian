@@ -35,7 +35,7 @@ const httpInterceptor = {
       // API要求的
       options.header.Authorization = token
     }
-    console.log(options)
+    // console.log(options)
   },
 }
 uni.addInterceptor('request', httpInterceptor)
