@@ -4,6 +4,8 @@
     {
       "path": "pages/index/index",
       "style": {
+        "navigationBarTextStyle": "white", // navigation文字颜色
+        "navigationStyle": "custom", // 定制navigation首页（隐藏默认导航）
         "navigationBarTitleText": "首页"
       }
     },

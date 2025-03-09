@@ -1,8 +1,9 @@
 <script setup lang="ts">
-//
+import CustomNavBar from './components/CustomNavBar.vue'
 </script>
 
 <template>
+  <CustomNavBar />
   <view class="index">index</view>
   <uni-card
     title="基础卡片"
